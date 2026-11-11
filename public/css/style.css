@@ -1,0 +1,211 @@
+/******************************************************************************
+Curso: Tecnologia em Análise e Desenvolvimento de Sistemas
+Disciplina: Linguagem e Técnicas de Programação
+Professor: Flores
+Turma: ADS2A
+Componentes:
+    26014141-2 - Brenda Isabela
+    26007377-2 - Bruno Santian
+    26004109-2 - Gustavo Souza Rosevics
+    26009642-2 - Joao Victor de Souza
+    26010196-2 - Vitor Leandro
+Data: 11 de novembro de 2026
+Descritivo: Define a aparência das páginas de produtos e categorias
+da loja de eletrônicos.
+*******************************************************************************/
+
+/* Estrutura da página */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #edf2f7;
+    color: #233249;
+}
+
+.container {
+    box-sizing: border-box;
+    width: calc(100% - 32px);
+    max-width: 1180px;
+    margin: 32px auto;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(20, 38, 61, 0.10);
+    overflow-x: auto;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #eee;
+    margin: 20px 0;
+}
+
+/* Título e menu da loja */
+.container > h1 {
+    margin: -24px -24px 0;
+    padding: 26px 24px 12px;
+    background-color: #14263d;
+    color: #fff;
+    font-size: 28px;
+}
+
+.container > nav {
+    margin: 0 -24px 24px;
+    padding: 0 24px 18px;
+    background-color: #14263d;
+}
+
+nav a {
+    display: inline-block;
+    margin: 4px 8px 0 0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: #243c57;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #0f6b65;
+}
+
+h2 {
+    margin: 0 0 14px;
+    color: #14263d;
+    font-size: 24px;
+}
+
+/* Tabelas de produtos e categorias */
+table {
+    width: 100%;
+    margin-top: 14px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #dbe4ee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid #dbe4ee;
+}
+
+th {
+    background-color: #e9eff6;
+    color: #14263d;
+}
+
+tr:nth-child(even) {
+    background-color: #f7f9fc;
+}
+
+tr:last-child td {
+    border-bottom: 0;
+}
+
+/* Botões de ação */
+.button,
+.button:visited {
+    display: inline-block;
+    margin: 5px 0;
+    padding: 9px 14px;
+    border: none;
+    border-radius: 7px;
+    background-color: #0f6b65;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0a514c;
+}
+
+.button.edit,
+.button.edit:visited {
+    margin-right: 6px;
+    background-color: #fff0c7;
+    color: #6b4000;
+}
+
+.button.edit:hover {
+    background-color: #ffe4a0;
+}
+
+.button.delete,
+.button.delete:visited {
+    background-color: #fce8e8;
+    color: #a1222c;
+}
+
+.button.delete:hover {
+    background-color: #f8d2d5;
+}
+
+/* Formulários de cadastro e edição */
+form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form select {
+    box-sizing: border-box;
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+form button[type="submit"] {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.error {
+    margin-top: 10px;
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    color: #666;
+    text-align: center;
+}
